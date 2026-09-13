@@ -57,11 +57,17 @@ print(maior_valor([3, 9, 2, 7, 67, 999]))
 
 def existe(lista, alvo):
     """Devolve True se o alvo esta na lista, False se nao esta."""
-    
+    def existe(lista, alvo):
+      for numero in lista:
+ if numero == alvo:
+
+            return True
+
+    return False
 
 
-
-
+print(existe([9, 8, 67], 8))
+print(existe([4, 8, 42], 67))
 
 
 
