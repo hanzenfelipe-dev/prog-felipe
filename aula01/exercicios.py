@@ -22,23 +22,52 @@ print(soma_lista([]))
 
 def conta_pares(lista):
     """Devolve quantos numeros da lista sao pares."""
-    pass
+    def conta_pares(lista):
+      contador = 0
+
+    for numero in lista:
+
+          if numero % 2 == 0:
+
+            contador += 1
+
+return contador
+
+
+ print(conta_pares([1, 2, 3, 4, 6, 67, 42]))
+
+
+
+
+
 
 
 def maior_valor(lista):
     """Devolve o maior numero da lista. A lista nao esta vazia."""
-    pass
+    
+
+
+
+
+
 
 
 def existe(lista, alvo):
     """Devolve True se o alvo esta na lista, False se nao esta."""
-    pass
+    
+
+
+
+
+
 
 
 def busca_linear(lista, alvo):
-    """Devolve a posicao do alvo na lista, ou -1 se ele nao estiver."""
-    pass
+     
 
+
+   
+    
 
 def segundo_maior(lista):
     """(Desafio) Devolve o segundo maior, percorrendo a lista uma unica vez."""
