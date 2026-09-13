@@ -73,10 +73,18 @@ print(existe([4, 8, 42], 67))
 
 def busca_linear(lista, alvo):
      
+for i in range(len(lista)): 
+      if lista[i] == alvo: 
+            return i 
+
+    return -1 
 
 
-   
-    
+print(busca_linear([4, 8, 67], 8)) 
+
+  print(busca_linear([4, 8, 42], 9))
+
+  
 
 def segundo_maior(lista):
     """(Desafio) Devolve o segundo maior, percorrendo a lista uma unica vez."""
