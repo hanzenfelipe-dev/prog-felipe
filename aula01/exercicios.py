@@ -37,19 +37,22 @@ return contador
  print(conta_pares([1, 2, 3, 4, 6, 67, 42]))
 
 
-
-
-
-
-
 def maior_valor(lista):
     """Devolve o maior numero da lista. A lista nao esta vazia."""
     
+def maior_valor(lista):
+ 
+    maior = lista[0]
+
+  for numero in lista:
+
+          if numero > maior:
+            maior = numero
+
+  return maior
 
 
-
-
-
+print(maior_valor([3, 9, 2, 7, 67, 999]))
 
 
 def existe(lista, alvo):
