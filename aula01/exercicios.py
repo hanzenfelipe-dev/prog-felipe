@@ -88,4 +88,20 @@ print(busca_linear([4, 8, 67], 8))
 
 def segundo_maior(lista):
     """(Desafio) Devolve o segundo maior, percorrendo a lista uma unica vez."""
-    pass
+    #muito hard
+def segundo_maior(lista):
+    maior = lista[0]
+    segundo = lista[0]
+
+    for numero in lista:
+        if numero > maior:
+            segundo = maior
+            maior = numero
+        elif numero > segundo:
+            segundo = numero
+
+    return segundo
+
+
+print(segundo_maior([3, 90, 2, 42]))
+print(segundo_maior([67, 80, 1]))
