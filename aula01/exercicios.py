@@ -5,11 +5,11 @@ Escreva sua solucao no lugar do 'pass'.
 """
 
 
+
+   
 def soma_lista(lista):
     """Devolve a soma de todos os numeros da lista. Lista vazia devolve 0."""
-    def soma_lista(lista):
     soma = 0
-
     for numero in lista:
         soma += numero
 
@@ -22,8 +22,7 @@ print(soma_lista([]))
 
 def conta_pares(lista):
     """Devolve quantos numeros da lista sao pares."""
-    def conta_pares(lista):
-      contador = 0
+    contador = 0
 
     for numero in lista:
 
@@ -31,10 +30,10 @@ def conta_pares(lista):
 
             contador += 1
 
-return contador
+    return contador
 
 
- print(conta_pares([1, 2, 3, 4, 6, 67, 42]))
+print(conta_pares([1, 2, 3, 4, 6, 67, 42]))
 
 
 def maior_valor(lista):
@@ -44,12 +43,12 @@ def maior_valor(lista):
  
     maior = lista[0]
 
-  for numero in lista:
+    for numero in lista:
 
           if numero > maior:
             maior = numero
 
-  return maior
+    return maior
 
 
 print(maior_valor([3, 9, 2, 7, 67, 999]))
@@ -57,9 +56,8 @@ print(maior_valor([3, 9, 2, 7, 67, 999]))
 
 def existe(lista, alvo):
     """Devolve True se o alvo esta na lista, False se nao esta."""
-    def existe(lista, alvo):
-      for numero in lista:
- if numero == alvo:
+    for numero in lista:
+       if numero == alvo:
 
             return True
 
@@ -73,7 +71,7 @@ print(existe([4, 8, 42], 67))
 
 def busca_linear(lista, alvo):
      
-for i in range(len(lista)): 
+    for i in range(len(lista)): 
       if lista[i] == alvo: 
             return i 
 
@@ -82,7 +80,7 @@ for i in range(len(lista)):
 
 print(busca_linear([4, 8, 67], 8)) 
 
-  print(busca_linear([4, 8, 42], 9))
+print(busca_linear([4, 8, 42], 9))
 
   
 
